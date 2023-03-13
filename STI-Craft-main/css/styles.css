@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-bg-color: #3c3c45;
+  --h1: white;
+  --play: #0066b8;
+  --info-bg: #dbdbdb;
+  --info-text: #303030;
+  --feature-h2: #cfcfcf;
+  --feature-border: #0066b8;
+  --download: #4f4f5a;
+}
+
+body {
+  background: var(--main-bg-color);
+}
+/* ==================================== */
+/*                 TITRE                */
+/* ==================================== */
+.titre {
+  color: var(--h1);
+  font-family: "Montserrat";
+
+  margin-left: 3%;
+  margin-top: 2%;
+
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 60px;
+  text-align: left;
+}
+.container p {
+  font-size: 3rem;
+  text-align: left;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  color: var(--h1);
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: left;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+.sous-titre {
+  color: var(--h1);
+  margin-top: -1.5%;
+
+  width: 50%;
+  max-width: 760px;
+
+  margin-left: 3%;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+/* ==================================== */
+/*                BOUTONS               */
+/* ==================================== */
+.boutons {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 50%;
+  max-width: 750px;
+
+}
+.play {
+  cursor: pointer;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 385px;
+
+  color: var(--h1);
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 17px;
+
+  background: var(--play);
+  border-radius: 6px;
+
+}
+.play i{
+  animation-name: play;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes play {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.info {
+  cursor: pointer;
+
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+  width: 385px;
+
+  color: var(--info-text);
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 14px;
+
+  background: var(--info-bg);
+  border-radius: 6px;
+}
+/* ==================================== */
+/*                 FEATURE              */
+/* ==================================== */
+.feature {
+  display: flex;
+}
+.border {
+  border-left: solid 4px var(--feature-border);
+}
+.group {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.group h1 {
+  margin-left: 10px;
+  color: var(--h1);
+
+  font-size: 27px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-align: left;
+}
+.adresse{
+  animation-name: bottom;
+  animation-duration: 750ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.version{
+  animation-name: bottom;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.status{
+  animation-name: bottom;
+  animation-duration: 1250ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.group h2 {
+  font-family: "Montserrat";
+  font-size: 16px;
+  margin-top: -15px;
+  margin-left: 10px;
+  color: var(--feature-h2);
+}
+/* ==================================== */
+/*                 SKINS                */
+/* ==================================== */
+.one {
+  animation-name: skin;
+  animation-duration: 700ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.two {
+  animation-name: skin;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.three {
+  animation-name: skin;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.four {
+  animation-name: skin;
+  animation-duration: 1100ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.five {
+  animation-name: skin;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.six {
+  animation-name: skin;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.seven{
+  animation-name: skin;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+.eight{
+  animation-name: skin;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: 1;
+}
+@keyframes skin {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.skin {
+  float: right;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+.group_skin img {
+  height: 250px;
+}
+.group_skin {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+}
+.group_skin:hover {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.05);
+}
+.group_skin:hover .name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1.09);
+}
+.name {
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  margin-top: 3px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
+}
+.name_2{
+  transition: transform 330ms ease-in-out;
+  transform: scale(1);
+
+  margin-top: 3px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+
+  color: var(--h1);
+  padding: 5px 15px 5px 15px;
+
+  background-color: var(--play);
+  border-radius: 6px;
+}
+.group_skin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.all_skin {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+/* ==================================== */
+/*                ROADMAP               */
+/* ==================================== */
+.rectangle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 2%;
+  margin-left: 2.8%;
+  width: 50%;
+  height: 230px;
+  max-width: 750px;
+  background: #464650;
+  border-radius: 16px;
+}
+.rectangle img {
+  height: 100%;
+}
+
+/* ==================================== */
+/*              RESPONSIVE              */
+/* ==================================== */
+
+@media (max-width: 1386px) {
+  .rectangle img  {
+    height: 90%;
+  }
+}
+@media (max-width: 1529px) {
+  .skin {
+    margin-top: 3%;
+  }
+}
+@media (min-width: 1611px) {
+  .group_skin img {
+    height: 270px;
+  }
+  .skin {
+    margin-top: 1%;
+  }
+}
+@media (max-width: 1683px) {
+  .eight {
+    display: none;
+  }
+  .four {
+    display: none;
+  }
+  .name_2 {
+    display: none;
+  }
+}
